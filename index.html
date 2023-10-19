@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!------------ NAVBAR ------------>
+      <div class="navbar">
+        <h2>Welcome back, <span class="name">Makbarah Bank</span></h2>
+        <img src="logo.png" alt="" />
+
+        <div class="login">
+          <input class="login-user" type="text" placeholder="user" />
+          <input class="login-pin" type="text" placeholder="PIN" />
+          <button class="btn-nav">&rightarrow;</button>
+        </div>
+      </div>
+
+      <!------------ BODY ------------>
+
+      <div class="accounts">
+        <div class="balance">
+          <div class="current">
+            <h2>Current balance</h2>
+            <p>As of <span class="date">05/03/2037</span></p>
+          </div>
+
+          <div>
+            <h1 class="total-balance">6370€</h1>
+          </div>
+        </div>
+
+        <div class="banking">
+          <div class="deposits">
+            <div class="inside-deposits">
+              <button class="btn-deposit-postive">8Deposit</button>
+              <p>3000€</p>
+            </div>
+            <hr />
+
+            <div class="inside-deposits">
+              <button class="btn-deposit-negative">7Deposit</button>
+              <p>-2000€</p>
+            </div>
+            <hr />
+          </div>
+
+          <div class="transaction">
+            <div class="transfer">
+              <h3 class="transfer-head">Transfer money</h3>
+              <div class="inside-input">
+                <input class="transfer-user" type="text" />
+                <input class="transfer-amount" type="number" />
+                <button class="btn-nav-transfer">&rightarrow;</button>
+              </div>
+              <div class="context">
+                <p>Transfer to</p>
+                <p>Amount</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="request">
+              <h3 class="request-head">Request loan</h3>
+
+              <input class="request-input" type="number" />
+              <button class="btn-nav-request">&rightarrow;</button>
+              <div class="request-context">
+                <p>Amount</p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+            <div class="close">
+              <h3 class="close-head">Close account</h3>
+              <div class="inside-input">
+                <input class="close-user" type="text" />
+                <input class="close-pass" type="number" />
+                <button class="btn-nav-close">&rightarrow;</button>
+              </div>
+              <div class="close-context">
+                <p>Confirm user</p>
+                <p>Confirm PIN</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="bottom-top">
+            <div class="collection">
+              <p class="atom">IN</p>
+              <h2 class="dimensions-1">2270€</h2>
+            </div>
+            <div class="collection">
+              <p class="atom">OUT</p>
+              <h2 class="dimensions-2">0€</h2>
+            </div>
+            <div class="collection">
+              <p class="atom">INTEREST</p>
+              <h2 class="dimensions-3">21.3€</h2>
+            </div>
+          </div>
+
+          <button class="sort">&downarrow;SORT</button>
+          <p id="countdown">You will be logged out in 05:00</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
