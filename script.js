@@ -67,8 +67,10 @@ const account2 = {
     }
 
     updateCountdown(); // Initial update
-    const countdownInterval = setInterval(updateCountdown, 1000); // Update every second
+     // Update every second
+     let countdownInterval = setInterval(updateCountdown, 1000);
   }
+
 
   // Start countdown for 5 minutes
   
@@ -77,7 +79,7 @@ const account2 = {
 
 
   document.querySelector('.btn-nav').addEventListener('click',function(){
-       startCountdown(1);
+       
         let user =  document.querySelector('.login-user').value
         let pass =  document.querySelector('.login-pin').value
 
@@ -100,6 +102,11 @@ const account2 = {
 
         if(checkPass === +(pass)){
             // console.log('its right')
+            // clearInterval(countdownInterval);
+
+            
+            // clearInterval(countdownInterval);
+            startCountdown(5);
 
             document.querySelector('.accounts').style.visibility = 'visible';
 
